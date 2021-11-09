@@ -23,7 +23,8 @@ public class CrescendoDemoController {
         log.info("--CrescendoDemoController#AllReviews--");
         log.debug("restaurant:" + restaurant);
         // Object as a placeholder for now.
-        Object o = restTemplate.getForObject("https://api.yelp.com/v3/businesses/" + restaurant + "/reviews", Object.class);
+        RestaurantReviews restReviews = restTemplate.getForObject("https://api.yelp.com/v3/businesses/" + restaurant + "/reviews", RestaurantReviews.class);
+        log.info("Total: " + restReviews.getTotal());
         return restaurant;
     }
 }
