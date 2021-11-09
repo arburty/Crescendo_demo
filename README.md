@@ -27,18 +27,16 @@ solution. Here is what we want you to do:
 ## Available Endpoints
 The availble endpoints are:
 
-GET: '/yelp/reviews'
-   param: restaurant defaultValue='casa-bonita-lakewood-2'
-   desc: Return all the data from the 'api.yelp.com/v3/businesses/{id}/reviews' endpoint.
-GET: '/yelp/justreviews'
-   desc: A simple pretty print version that returns a list of strings.
-   param: restaurant defaultValue='casa-bonita-lakewood-2'
-GET: '/help'
-   desc: an endpoint to tell you about the available endpoints.
+    GET: '/yelp/reviews'
+       param: restaurant defaultValue='casa-bonita-lakewood-2'
+       desc: Return all the data from the 'api.yelp.com/v3/businesses/{id}/reviews' endpoint.
+    GET: '/yelp/justreviews'
+       desc: A simple pretty print version that returns a list of strings.
+       param: restaurant defaultValue='casa-bonita-lakewood-2'
+    GET: '/help'
+       desc: an endpoint to tell you about the available endpoints.
 
 ## Running the Application
 Run the application with: `./mvnw run spring-boot:run`
-in the projects root directory and the endpoints can be found at localhost:8080
+in the projects root directory and the endpoints can be found at `localhost:8080`
 e.x. `curl localhost:8080/help`
-
-
