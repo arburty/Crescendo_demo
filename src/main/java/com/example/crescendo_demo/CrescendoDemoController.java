@@ -28,6 +28,7 @@ public class CrescendoDemoController {
         return restReviews;
     }
 
+    // A Pretty Print sort of endpoint.
     @GetMapping(value = "/yelp/justreviews", produces = "application/json")
     public  ArrayList<String> justReviews(
             @RequestParam(value = "restaurant" , defaultValue = "casa-bonita-lakewood-2") String restaurant)
@@ -51,6 +52,11 @@ public class CrescendoDemoController {
     public String help() {
         return "the availble endpoints are:\n" +
             "GET: '/yelp/reviews'\n" +
+            "   param: restaurant defaultValue='casa-bonita-lakewood-2'\n" +
+            "   desc: Return all the data from the 'api.yelp.com/v3/businesses/{id}/reviews' endpoint.\n" +
+            "GET: '/yelp/justreviews'\n" +
+            "   desc: A simple pretty print version that returns a list of strings.\n" +
             "   param: restaurant defaultValue='casa-bonita-lakewood-2'";
+
     }
 }

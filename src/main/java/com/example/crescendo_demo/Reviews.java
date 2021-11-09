@@ -59,4 +59,13 @@ public class Reviews {
 		this.user = user;
 	}
 
+	@Override
+	public String toString() {
+		return "id: " + id +
+	" | url: " + url +
+	" | text: " + text +
+	" | rating: " + rating +
+	" | timeCreated: " + timeCreated +
+	" | user: " + user;
+	}
 }

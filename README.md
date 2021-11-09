@@ -22,3 +22,15 @@ solution. Here is what we want you to do:
     such as joyLikelihood or sorrowLikelihood. Include this data along with the
     JSON data. If you are familiar with a similar technology feel free to use
     that instead of the Google Vision API.
+
+
+## Available Endpoints
+
+The availble endpoints are:
+
+GET: '/yelp/reviews'
+   param: restaurant defaultValue='casa-bonita-lakewood-2'
+   desc: Return all the data from the 'api.yelp.com/v3/businesses/{id}/reviews' endpoint.
+GET: '/yelp/justreviews'
+   desc: A simple pretty print version that returns a list of strings.
+   param: restaurant defaultValue='casa-bonita-lakewood-2'

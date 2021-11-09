@@ -41,4 +41,13 @@ public class User {
 		this.name = name;
 	}
 
+	@Override
+	public String toString() {
+		return "id: " + id +
+			" | profileUrl:" + profileUrl +
+			" | imageUrl:" + imageUrl +
+			" | name: " + name;
+
+	}
+
 }

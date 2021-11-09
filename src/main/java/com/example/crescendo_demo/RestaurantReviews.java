@@ -24,4 +24,10 @@ public class RestaurantReviews {
     public void setReviews(ArrayList<Reviews> reviews) {
         this.reviews = reviews;
     }
+
+    @Override
+    public String toString() {
+        return "total: " + total +
+            " | reviews: " + reviews.toString();
+    }
 }
