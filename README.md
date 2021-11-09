@@ -25,7 +25,6 @@ solution. Here is what we want you to do:
 
 
 ## Available Endpoints
-
 The availble endpoints are:
 
 GET: '/yelp/reviews'
@@ -36,3 +35,10 @@ GET: '/yelp/justreviews'
    param: restaurant defaultValue='casa-bonita-lakewood-2'
 GET: '/help'
    desc: an endpoint to tell you about the available endpoints.
+
+## Running the Application
+Run the application with: `./mvnw run spring-boot:run`
+in the projects root directory and the endpoints can be found at localhost:8080
+e.x. `curl localhost:8080/help`
+
+
