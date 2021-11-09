@@ -34,3 +34,5 @@ GET: '/yelp/reviews'
 GET: '/yelp/justreviews'
    desc: A simple pretty print version that returns a list of strings.
    param: restaurant defaultValue='casa-bonita-lakewood-2'
+GET: '/help'
+   desc: an endpoint to tell you about the available endpoints.
