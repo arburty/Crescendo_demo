@@ -15,7 +15,9 @@ public class CrescendoDemoApplication {
 
 	@Bean
 	public RestTemplate restTemplate(RestTemplateBuilder restTemplateBuilder) {
-		return restTemplateBuilder.build();
+		return restTemplateBuilder
+			.defaultHeader("Authorization", "Bearer eX9Ygrq4Xh65wrj7s93gAkNITsvBxySqBK80TDmRXbxaRnkwCWLaENZADKrX-mtV21JSxb1LexNRDiPRMZTjdaFUs6ITmhwNDP5gmxJLaP_Knop64qZG23I_6pKJYXYx")
+			.build();
 	}
 
 }
